@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/yourcode.js"
+      defer
+      crossorigin="anonymous"
+    ></script>
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="container"">
+    <div class="inner-container">
+      <!-- left-section -->
+      <div class="header">
+        <div class="left-header">
+          <div style="display: flex; align-items: center; color: #42515f">
+            <img
+              src="https://static.thenounproject.com/png/3632534-200.png"
+              alt="logo"
+            />
+          </div>
+          <div class="header-left">
+            <div style="color: #82a70c">Employee</div>
+            <div style="color: #42515f">payrole</div>
+          </div>
+        </div>
+      </div>
+      <!-- header section -->
+
+      <!-- form section -->
+      <div class="form-section">
+        <!-- form class -->
+        <div class="form">
+          <!-- form header -->
+          <div class="form-header">Employee Payroll Form</div>
+          <!-- form header -->
+          <!-- Data entry field -->
+          <div style="">
+            <form action="" onsubmit="addDetails(event)" id="myform" >
+              <!-- Name label -->
+             <div  style=" padding: 10px; font-size: 1.1rem;">
+             <label for="Name" style="margin-right: 80px;">Name</label>
+             <input type="text"  style="width:500px; height: 30px; border-radius:5px;" class="input-name">
+               </div>
+                <!-- Name label -->
+                <!-- profile section -->
+                 <div class="profile" style="display: flex; align-items: center;padding: 10px;">
+               <label for="profileImg" style="margin-right: 20px; font-size: 1.1rem;">Profile image</label>
+                   <!-- radio buttons -->
+                  <div class="profile-button" style="display: flex; align-items: center; justify-content: space-between;">
+                  <div style=" padding: 10px;">
+                   <input type="radio" class="r1" value="men.png">
+                   </div>
+                     <div>
+                   <img src="assests/men.png" alt="logo"  >
+                           </div>
+                            <div style=" padding: 10px;">
+                   <input type="radio" class="r2" value="men.png">
+                   </div>
+                     <div>
+                   <img src="assests/men.png" alt="logo"  >
+                           </div>
+                   <div style=" padding: 10px;">
+                   <input type="radio" class="r3" value="men.png">
+                   </div>
+                     <div>
+                   <img src="assests/men.png" alt="logo"  >
+                           </div>
+                   <div style=" padding: 10px;">
+                   <input type="radio" class="r4" value="men.png">
+                   </div>
+                     <div>
+                   <img src="assests/men.png" alt="logo"  >
+                           </div>
+
+
+                  </div>
+                     <!-- radio buttons -->
+                 </div>
+                     <!-- profile section -->
+                      <!-- Department -->
+                 <div style=" display: flex;  align-items: center;padding: 10px;font-size: 1.1rem">
+               <label for="department" style="margin-right: 48px;">Department</label>
+                  <div style="display: flex; align-items: center; margin-right: 20px;">
+                    <input type="checkbox" class="d1"  name="hr" value="HR" >
+                  <span>HR</span>
+                  </div>
+                   <div style="display: flex; align-items: center;margin-right: 20px;">
+                  <input type="checkbox" class="d2"  name="sales" value="Sales" >
+                  <span>Sales</span>
+                  </div>
+                  <div style="display: flex; align-items: center;margin-right: 20px;">
+                    <input type="checkbox" class="d3"  name="finance" value="Finance"  >
+                    <span>Finance</span>
+                  </div>
+                  <div style="display: flex; align-items: center;margin-right: 20px;">
+                    <input type="checkbox" name="enginners" id="" class="d4" value="Engineers" >
+                    <span>Engineers</span>
+                  </div>
+                  <div style="display: flex; align-items: center;margin-right: 20px;">
+                    <input type="checkbox" class="d5"  name="others" value="Others"  >
+                    <span>Others</span>
+                  </div>
+              </div>
+                  <!-- Department -->
+                   <!-- Salary -->
+              <div class="salary">
+              <label for="salary" style="margin-right: 90px;">Salary</label>
+             <select name="select" id="salary" >
+                <option value="" >
+                  <span style="font-size: 2rem; font-weight: 800;">Select Salary</span>
+                </option>
+              <option value="100000">100000</option>
+                <option value="200000">200000</option>
+                  <option value="300000">300000</option>
+                    <option value="400000">400000</option>
+                      <option value="500000">500000</option>
+             </select>
+             </div>
+                    <!-- Salary -->
+                     <!-- Start Date -->
+                   <div class="date">
+                        <label for="">Start Date</label>
+                         <select name="Day" id="day">
+                          <option value="">Day</option>
+                               <option value="1">1</option>
+                                    <option value="2">2</option>
+                                         <option value="3">3</option>
+                         </select>
+                          <select name="Month" id="month">
+                          <option value="">Month</option>
+                               <option value="Jan">Jan</option>
+                                    <option value="Feb">Feb</option>
+                                         <option value="Mar">Mar</option>
+                                         </select>
+                                          <select name="Day" id="year">
+                          <option value="">Year</option>
+                               <option value="2024">2024</option>
+                                    <option value="2025">2025</option>
+                                         <option value="2026">2026</option>
+                                         </select>
+                   </div>
+                   <!-- Start Date -->
+                    <!-- Notes -->
+                <div class="notes">
+      <label for="">Notes</label>
+      <textarea name="" id="notes"></textarea>
+    </div>
+                            <!-- Notes -->
+    <div class="buttons">
+                 <button>Cancel</button>
+                   <div >
+                   <button type="submit" id="submit-form">Submit</button>
+                   <button style="margin-left: -10px;" >Reset</button>
+                  </div>
+              </div>
+              </form>
+          
+          </div>
+          <!-- Data entry field -->
+               <!-- <div class="buttons">
+                 <button>Cancel</button>
+                   <div >
+                   <button type="submit">Submit</button>
+                   <button style="margin-left: -10px;" >Reset</button>
+                  </div>
+              </div> -->
+        </div>
+        <!-- form class -->
+         </div>
+         <!-- form section -->
+      </div>
+      <!-- inner-container -->
+    </div>
+    <!-- container -->
+     <script>
+    function addDetails(e){
+      e.preventDefault()
+    console.log('c')
+    }
+     </script>
+
+
+  </body>
+</html>
