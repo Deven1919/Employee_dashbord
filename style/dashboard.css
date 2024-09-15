@@ -1,0 +1,130 @@
+.container{
+    border:2px solid black;
+    height: 100vh;
+}
+
+.inner-container{
+    border: 2px solid blue;
+    border-radius: 10px;
+    height: 100%;
+    width: 1300px;
+    margin: auto;
+    background-color: #F7F7F7;
+
+}
+.header{
+    /* border: 2px solid black; */
+    height: 106px;
+    background-color: #ffff;
+    display: flex;
+    align-items: center;
+}
+.logo{
+    display: flex;
+    /* border: 1px solid black; */
+    width: 200px;
+    align-items: center;
+    margin-left: 150px;
+}
+.employee-logo{
+    font-size: 1.4rem;
+    font-weight: 600;
+ 
+}
+.logo img{
+   width: 68px;
+  height: 68px;
+}
+.actions{
+    display: flex;
+    align-items:center;
+    /* border: 1px solid black; */
+    justify-content: space-between;
+    width: 70px;
+}
+section{
+    /* border: 1px solid black; */
+    width: 1100px;
+    margin: auto;
+
+    
+    /* height: ; */
+}
+.section-header{
+    /* border: 2px solid black; */
+    display: flex;
+  
+    align-items: center;
+    justify-content: space-between;
+}
+.details{
+    font-size: 2rem;
+    color: #42515F;
+    /* border: 1px solid black; */
+    padding: 20px 0 20px 0;
+    
+}
+.section-header-right input[type=text]{
+    width: 60px;
+    height: 40px;
+    border-radius: 25px;
+  background-color: none;
+    background-image: url('searchicon.png');
+    /* background-position: 10px 10px; 
+    background-repeat: no-repeat;
+  padding: 12px 20px 12px 40px; */
+}
+.section-header-right{
+    /* border: 2px solid black; */
+    width: 210px;
+    display: flex;
+    justify-content: space-between;
+}
+.section-header button{
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 10px;
+   padding-bottom: 10px;
+    font-size: 1rem;
+    background-color: red;
+    border-radius: 5px;
+    color: #ffff;
+}
+.section-header p{
+  
+    font-size: 1.4rem;
+    font-weight: 600;
+
+}
+.table{
+    text-transform: uppercase;
+    border: 1px solid black;
+    border-radius: 5px;
+ 
+
+}
+.table-heading-outer{
+    background-color: #42515F;
+    /* display: flex;
+    justify-content: space-between;
+    border: 2px solid red;
+    margin: auto;
+    ba
+    color: #42515F;
+    width: 0%; */
+}
+.table-heading{
+    display: flex;
+    justify-content: space-between;
+    /* border: 2px solid red; */
+    padding: 15px;
+    margin: auto;
+
+    color: #ffff;
+    width: 80%;
+}
+.table-data{
+    display: flex;
+    border: 0.5px solid black;
+    justify-content: space-evenly;
+}

@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="../style//style.css" />
     <script
       src="https://kit.fontawesome.com/yourcode.js"
       defer
@@ -39,12 +39,12 @@
           <div class="form-header">Employee Payroll Form</div>
           <!-- form header -->
           <!-- Data entry field -->
-          <div style="">
-            <form action="" onsubmit="addDetails(event)" id="myform" >
+          <div >
+            <form id="myform" >
               <!-- Name label -->
              <div  style=" padding: 10px; font-size: 1.1rem;">
              <label for="Name" style="margin-right: 80px;">Name</label>
-             <input type="text"  style="width:500px; height: 30px; border-radius:5px;" class="input-name">
+             <input type="text"  style="width:500px; height: 30px; border-radius:5px;" name="name" class="input-name">
                </div>
                 <!-- Name label -->
                 <!-- profile section -->
@@ -53,28 +53,28 @@
                    <!-- radio buttons -->
                   <div class="profile-button" style="display: flex; align-items: center; justify-content: space-between;">
                   <div style=" padding: 10px;">
-                   <input type="radio" class="r1" value="men.png">
+                   <input type="radio" class="r1"  value="a.png" name="prof-img">
                    </div>
                      <div>
-                   <img src="assests/men.png" alt="logo"  >
+                   <img src="../assests/men.png" alt="logo"  >
                            </div>
                             <div style=" padding: 10px;">
-                   <input type="radio" class="r2" value="men.png">
+                   <input type="radio" class="r2" value="b.png" name="prof-img">
                    </div>
                      <div>
-                   <img src="assests/men.png" alt="logo"  >
+                   <img src="../assests/men.png" alt="logo"  >
                            </div>
                    <div style=" padding: 10px;">
-                   <input type="radio" class="r3" value="men.png">
+                   <input type="radio" class="r3" value="c.png" name="prof-img">
                    </div>
                      <div>
-                   <img src="assests/men.png" alt="logo"  >
+                   <img src="../assests/men.png" alt="logo"  >
                            </div>
                    <div style=" padding: 10px;">
-                   <input type="radio" class="r4" value="men.png">
+                   <input type="radio" class="r4" value="d.png" name="prof-img">
                    </div>
                      <div>
-                   <img src="assests/men.png" alt="logo"  >
+                   <img src="../assests/men.png" alt="logo"  >
                            </div>
 
 
@@ -86,23 +86,23 @@
                  <div style=" display: flex;  align-items: center;padding: 10px;font-size: 1.1rem">
                <label for="department" style="margin-right: 48px;">Department</label>
                   <div style="display: flex; align-items: center; margin-right: 20px;">
-                    <input type="checkbox" class="d1"  name="hr" value="HR" >
+                    <input type="checkbox" class="d1"  name="department" value="HR" >
                   <span>HR</span>
                   </div>
                    <div style="display: flex; align-items: center;margin-right: 20px;">
-                  <input type="checkbox" class="d2"  name="sales" value="Sales" >
+                  <input type="checkbox" class="d2"  name="department" value="Sales" >
                   <span>Sales</span>
                   </div>
                   <div style="display: flex; align-items: center;margin-right: 20px;">
-                    <input type="checkbox" class="d3"  name="finance" value="Finance"  >
+                    <input type="checkbox" class="d3"  name="department" value="Finance"  >
                     <span>Finance</span>
                   </div>
                   <div style="display: flex; align-items: center;margin-right: 20px;">
-                    <input type="checkbox" name="enginners" id="" class="d4" value="Engineers" >
+                    <input type="checkbox" name="department" id="" class="d4" value="Engineers" >
                     <span>Engineers</span>
                   </div>
                   <div style="display: flex; align-items: center;margin-right: 20px;">
-                    <input type="checkbox" class="d5"  name="others" value="Others"  >
+                    <input type="checkbox" class="d5"  name="department" value="Others"  >
                     <span>Others</span>
                   </div>
               </div>
@@ -110,7 +110,7 @@
                    <!-- Salary -->
               <div class="salary">
               <label for="salary" style="margin-right: 90px;">Salary</label>
-             <select name="select" id="salary" >
+             <select name="Salary" id="salary" >
                 <option value="" >
                   <span style="font-size: 2rem; font-weight: 800;">Select Salary</span>
                 </option>
@@ -137,7 +137,7 @@
                                     <option value="Feb">Feb</option>
                                          <option value="Mar">Mar</option>
                                          </select>
-                                          <select name="Day" id="year">
+                                          <select name="Year" id="year">
                           <option value="">Year</option>
                                <option value="2024">2024</option>
                                     <option value="2025">2025</option>
@@ -147,28 +147,28 @@
                    <!-- Start Date -->
                     <!-- Notes -->
                 <div class="notes">
-      <label for="">Notes</label>
-      <textarea name="" id="notes"></textarea>
-    </div>
-                            <!-- Notes -->
-    <div class="buttons">
-                 <button>Cancel</button>
+                <label for="">Notes</label>
+                <textarea name="Notes" id="notes"></textarea>
+               </div>
+            <!-- Notes -->
+                <!-- <div class="buttons">
+                 <button >Cancel</button>
                    <div >
-                   <button type="submit" id="submit-form">Submit</button>
-                   <button style="margin-left: -10px;" >Reset</button>
+                   <button type="submit" id="submit-form"  onclick="addDetails()">Submit</button>
+                   <button style="margin-left: -10px;" id="reset" onclick="Reset()" >Reset</button>
                   </div>
-              </div>
+              </div> -->
               </form>
           
           </div>
           <!-- Data entry field -->
-               <!-- <div class="buttons">
+               <div class="buttons">
                  <button>Cancel</button>
                    <div >
-                   <button type="submit">Submit</button>
-                   <button style="margin-left: -10px;" >Reset</button>
+                   <button type="submit" onclick="addDetails()">Submit</button>
+                 <button style="margin-left: -10px;" onclick="Reset()">Reset</button>
                   </div>
-              </div> -->
+              </div>
         </div>
         <!-- form class -->
          </div>
@@ -177,12 +177,12 @@
       <!-- inner-container -->
     </div>
     <!-- container -->
-     <script>
-    function addDetails(e){
-      e.preventDefault()
-    console.log('c')
-    }
-     </script>
+     <!-- <script>
+      const formEl=document.getElementById('myform')
+ console.log(formEl)
+     </script> -->
+     <script src="../script/index.js"/>
+   
 
 
   </body>
