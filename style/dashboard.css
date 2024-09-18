@@ -66,16 +66,16 @@ section{
 }
 .section-header-right input[type=text]{
     width: 60px;
-    height: 40px;
+    height: 50px;
     border-radius: 25px;
   background-color: none;
-    background-image: url('searchicon.png');
+ 
     /* background-position: 10px 10px; 
     background-repeat: no-repeat;
   padding: 12px 20px 12px 40px; */
 }
 .section-header-right{
-    /* border: 2px solid black; */
+    border: 2px solid black;
     width: 210px;
     display: flex;
     justify-content: space-between;
@@ -124,7 +124,32 @@ section{
     width: 80%;
 }
 .table-data{
-    display: flex;
+ border: 0.5px solid black;
+    /* display: flex;
     border: 0.5px solid black;
-    justify-content: space-evenly;
+    /* flex-direction: column; */
+    /* justify-content: space-evenly; 
+
+    padding:5px; */
+}
+ul{
+    
+    /* border: 1px solid black; */
+  /* border: 1px solid black; */
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    margin: auto;
+  
+}
+
+li{
+    display: flex;
+    /* margin-top: -10px; */
+     justify-content: space-evenly;
+    border: 0.5px solid black;
+   margin: auto;
+   margin-left: -20px;
+    padding: 10px;
+   width: 100%;
 }

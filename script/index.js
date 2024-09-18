@@ -55,8 +55,24 @@ const formEl = document.getElementById("myform");
 //   const form = document.getElementById("myform");
 //   form.reset();
 // });
+/////////////////////////////////////////////////////////////////////////////////////////
+//  const url = new URL(window.location.search);
+// const params = url.searchParams;
 
-function addDetails() {
+// const userId = params.get('id'); // '123'
+// console.log(userId);
+// const optionalParam = params.get('optionalParam'); // 'value' (or null if it doesn't exist)
+// console.log(userId)
+// console.log(optionalParam);
+///////////////////////////////
+
+  const url = window.location.search.replace(
+    /[=+\-*/%^&|<>!?~`#@$(){}[\]:;,."'\\]/g,
+    ""
+  );
+  console.log(url);
+//////////////////////////////////////
+async function addDetails() {
   const name = document.querySelector(".input-name").value;
   const profile_img = document.querySelectorAll('input[name="prof-img"]');
   console.log(profile_img);
@@ -104,12 +120,21 @@ function addDetails() {
     Start_Date: `${day}-${month}-${year}`,
     Notes: notes,
   };
-  localStorage.setItem("key", JSON.stringify(userDetails));
+  // const url = window.location.search.replace("?", "");
+  // console.log(typeof url);
+  const details = await fetch(`http://localhost:9000/questions/${url ? url : ""}`, {
+    method:url ? "PATCH" :"POST",
+    headers: {
+      "Content-Type": "application/json",
+    },
+    body: JSON.stringify(userDetails),
+  });
+
   const form = document.getElementById("myform");
   form.reset();
-  //   Redirect();
-
+    Redirect();
   console.log(userDetails);
+  console.log(details);
 }
 
 function Reset() {
